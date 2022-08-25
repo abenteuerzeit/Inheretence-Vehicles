@@ -21,6 +21,12 @@ namespace Vehicles
             car.Drive();
             car.Brake();
             car.StopEngine("Phut phut");
+
+            Console.WriteLine("\nTesting polymorphism");
+            Vehicle vehicle = car;
+            vehicle.Drive();
+            vehicle = airplane;
+            vehicle.Drive();
         }
 
         static void Main()
