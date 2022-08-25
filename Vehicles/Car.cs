@@ -13,5 +13,10 @@ namespace Vehicles
         {
             Console.WriteLine("Braking");
         }
+
+        public override void Drive()
+        {
+            Console.WriteLine("Motoring");
+        }
     }
 }
