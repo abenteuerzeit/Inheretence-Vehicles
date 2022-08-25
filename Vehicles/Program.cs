@@ -6,7 +6,21 @@ namespace Vehicles
     {
         static void doWork()
         {
-            // TODO:
+            Console.WriteLine("Airplane journey");
+            Airplane airplane = new Airplane();
+            airplane.StartEngine("Contact");
+            airplane.TakeOff();
+            airplane.Drive();
+            airplane.Land();
+            airplane.StopEngine("Whirr");
+
+            Console.WriteLine("\nCar Journey");
+            Car car = new Car();
+            car.StartEngine("Brm brm");
+            car.Accelerate();
+            car.Drive();
+            car.Brake();
+            car.StopEngine("Phut phut");
         }
 
         static void Main()
